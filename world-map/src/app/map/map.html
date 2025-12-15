@@ -1,2 +1,28 @@
-<p>map works!</p>
-<h2>World Map Component Loaded</h2>
+<div class="page">
+  <div class="column map-column">
+    <!-- World SVG goes here -->
+    <div class="map-container">
+      <!-- Replace this placeholder with your actual SVG (Part F) -->
+      <div class="map-placeholder">
+        <h3>World Map</h3>
+        <p>SVG will render here.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column info-column">
+    <h3>Country information</h3>
+    <div class="info-card" *ngIf="country">
+      <p><strong>Name:</strong> {{ country.name }}</p>
+      <p><strong>Capital:</strong> {{ country.capital }}</p>
+      <p><strong>Region:</strong> {{ country.region }}</p>
+      <p><strong>Income level:</strong> {{ country.incomeLevel }}</p>
+      <p><strong>Property A:</strong> {{ country.extraA }}</p>
+      <p><strong>Property B:</strong> {{ country.extraB }}</p>
+    </div>
+
+    <div class="info-card" *ngIf="!country">
+      <p>Select a country on the map to view details.</p>
+    </div>
+  </div>
+</div>

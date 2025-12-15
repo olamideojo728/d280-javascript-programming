@@ -1,0 +1,39 @@
+.page {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1rem;
+  align-items: start;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.column {
+  background: #fafafa;
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.map-container {
+  aspect-ratio: 16 / 9;        /* keeps the map responsive */
+  width: 100%;
+  background: #fff;
+  border: 1px dashed #c7c7c7;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.map-placeholder {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: #666;
+}
+
+.info-card {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
