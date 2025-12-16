@@ -1,0 +1,1 @@
+(Get-Content src\app\map\map.html) -replace '\(click\)="onCountrySelect\(''([^'']+)''\)/>', '(click)="onCountrySelect(''$1'')" ' | Set-Content src\app\map\map.html

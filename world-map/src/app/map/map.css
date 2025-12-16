@@ -37,3 +37,34 @@
   border-radius: 6px;
   padding: 0.75rem 1rem;
 }
+
+/* Ensure the SVG scales nicely */
+svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style each country path */
+path {
+  fill: #d9d9d9;        /* default fill color */
+  stroke: #333;         /* outline */
+  stroke-width: 0.5;
+  cursor: pointer;      /* shows hand cursor on hover */
+  transition: fill 0.2s ease;
+}
+
+/* Hover effect */
+path:hover {
+  fill: #999;           /* highlight when hovering */
+}
+
+/* Active (clicked) effect */
+path:active {
+  fill: #666;           /* darker when clicked */
+}
+
+/* Optional: highlight selected country */
+path.selected {
+  fill: #4a90e2;        /* blue highlight for selected country */
+}
